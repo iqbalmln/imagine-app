@@ -4,7 +4,6 @@ import Explore from "../views/Explore.vue";
 import Login from "../views/Login.vue"
 import Register from "../views/Register.vue"
 import Upload from "../views/Upload.vue";
-import Tes from "../views/Explore2.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,11 +32,6 @@ const router = createRouter({
       path: "/upload",
       name: "Upload",
       component: Upload,
-    },
-    {
-      path: "/tes",
-      name: "Tes",
-      component: Tes,
     },
   ]
 })
