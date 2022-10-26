@@ -5,6 +5,7 @@ defineProps({
   title: String,
   detailCard: String,
   desc: String,
+  category: String,
 });
 const mouseHover = ref(false);
 const clickCard = ref(false);
@@ -20,6 +21,7 @@ const clickCard = ref(false);
       @click="clickCard = !clickCard"
     >
       <img :src="img" class="h-full w-full object-cover" />
+      <p class="absolute top-2 right-4 text-white font-bold text-xl">IMG.</p>
       <Transition name="fade" mode="out-in">
         <p
           v-show="mouseHover"
@@ -36,14 +38,23 @@ const clickCard = ref(false);
     />
     <div
       v-show="clickCard"
-      class="bg-white p-8 rounded-md fixed top-1/2 transform
-      -translate-y-1/2 -translate-x-1/2 left-1/2 w-2/3 z-50 flex flex-col gap-4"
+      class="bg-white p-8 rounded-md fixed top-1/2 transform -translate-y-1/2 -translate-x-1/2 left-1/2 w-2/3 z-50 flex flex-col gap-4"
     >
-      <div class="h-[500px]">
+      <button
+        class="self-end flex items-center gap-2 border bg-blue-brand-primary text-white outline-none border-none rounded-md px-4 py-2"
+      >
+        <i class="bx bx-edit-alt" />
+        Edit
+      </button>
+      <div class="h-[500px] relative">
+        <p class="absolute top-2 right-4 text-white font-bold text-xl">IMG.</p>
         <img :src="img" class="w-full h-full object-cover" />
       </div>
-      <h2>{{ title }}</h2>
-      <p>{{ desc }}</p>
+      <h2 class="font-bold text-blue-brand-primary">{{ category }}</h2>
+      <div>
+        <h2>{{ title }}</h2>
+        <p class="opacity-70 text-sm">{{ desc }}</p>
+      </div>
     </div>
   </div>
 </template>
