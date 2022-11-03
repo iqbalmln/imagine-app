@@ -1,7 +1,45 @@
-# Project Des
+# Imagine App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-## Recommended IDE Setup
+Imagine is a web-based product with the need for users to massively showcase their photos and be seen by many people. Face up for more easier management content kinda Upload your shots, Update and Delete your shots. Tons of other features to effectively boost your digital portfolio are also included.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Features
+
+- Login & Register
+- 3 user role (user, admin, superadmin)
+- CRUD Data
+- Client Side Rendering
+
+## Tech
+
+Imagine uses a number of dependencies and tools to work properly:
+
+- [Vue JS] - An approachable, performant and versatile framework for building web user interfaces.!
+- [Visual Studio Code] - awesome web-based text editor
+- [Tailwind] - Rapidly build modern websites without ever leaving your HTML
+- [Boxicons] - Simple Open Source icons carefully crafted for designers & developers
+- [Express Js] - fast node.js network app framework 
+- [Vite] - tools for frontend
+
+And of course Dillinger itself is open source with a [public repository][dill]
+ on GitHub.
+
+## Installation
+
+Imagine requires [Node.js](https://nodejs.org/) v10+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+cd imagine-app
+npm i
+npm run dev
+```
+
+
+## License
+
+MIT
+
+**Free Software, Hell Yeah!**
